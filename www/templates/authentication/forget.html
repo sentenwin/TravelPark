@@ -1,0 +1,27 @@
+<ion-view view-title="Forgot Password" hide-back-button="true">
+
+   
+   <ion-content style="background: url(img/mountains.jpg) center; background-size: cover;">
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1>TravelPark</h1>
+            </div>
+        </div>
+       
+      <div class="list">
+        
+        <label class="item item-input">
+          <span class="input-label" style="color:#FFFFFF;">Email</span>
+          <input type="email" ng-model="forgotData.email" style="color:#FFFFFF;">
+        </label>
+        
+          <button ng-click="resetPassword()" class="button button-block button-positive">Reset Password</button>
+          
+          <button ui-sref="login" class="button button-block button-stable">Login</button>
+        
+      </div>
+    
+        
+    </ion-content>
+</ion-view>

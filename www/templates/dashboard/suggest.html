@@ -1,0 +1,21 @@
+<ion-view view-title="Suggestions" align-title="center">
+
+
+   
+   <ion-content>
+        
+     <div class="list">
+
+    <a class="item item-avatar" ng-repeat="data in datas" href="#/app/itineraries/{{data.id}}">
+      <img ng-src="{{data.img}}">
+      <h2>{{data.name}}</h2>
+      <p>{{data.content}}</p>
+    </a>
+    
+    
+
+</div>
+    
+        
+    </ion-content>
+</ion-view>

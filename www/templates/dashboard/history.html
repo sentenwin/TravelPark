@@ -1,0 +1,33 @@
+<ion-view view-title="History Details" align-title="center" hide-back-button="true">
+<ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+   <ion-content>
+    <div class="card" ng-repeat="data in history">
+  <div class="item item-divider">
+    {{data.startdate}} - {{data.enddate}}
+  </div>
+  <div class="item item-text-wrap">
+    <p>
+      Your Pick Up point : {{data.pickup}}
+    </p>
+    <p>
+      Your Destination : {{data.destination}}
+    </p>
+    <p>
+      Budget Details : {{data.budget}}
+    </p>
+    <p>
+      Vechicle : {{data.vechicle}}
+    </p>
+    <p>
+      Price : {{data.price}}
+    </p>
+    <p>Time: {{data.time}}</p>
+  </div>
+ 
+</div>
+        
+    </ion-content>
+</ion-view>

@@ -1,0 +1,17 @@
+<ion-view title="Payment">
+   
+
+  <ion-content> 
+  <br/>
+  <h3 style="text-align: center"> Payment Method</h3>
+  <hr/><br>
+
+  <ion-list>
+      <ion-item ng-repeat="payment in payment" ng-click="show()">
+        {{payment.name}}
+        <hr/>
+      </ion-item>
+    </ion-list>  
+      
+  </ion-content>
+</ion-view>

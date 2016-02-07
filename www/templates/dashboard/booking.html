@@ -1,0 +1,73 @@
+ <ion-view view-title="TravelPark" hide-back-button="true">
+<ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+<button id="fab" class="button button-balanced button-fab button-fab-bottom-right">
+            <i class="icon ion-ios-telephone"></i>
+        </button>
+    <ion-content>     
+
+        <div class="hero has-mask slide-up" style="background-image: url('./img/mountains.jpg');">
+            <div class="content">
+                <!--<button class="button button-large button-clear flat waves-effect waves-button waves-light icon ion-heart pull-right text-white"></button>
+                <button class="button button-large button-clear flat waves-effect waves-button waves-light icon ion-images pull-right text-white"></button>-->
+                <button class="button button-large button-clear flat waves-effect waves-button waves-light icon ion-map pull-right text-white"></button>
+            </div>
+        </div>
+        <div class="mid-bar dark-bg z1 padding">
+            <h3>Book The Trip</h3>
+            <p>Tell us, When, Where, We will make it</p>
+        </div>
+
+            <div class="list">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Pick Up Point</span>
+                    <input type="text" placeholder="Pick Up Point" ng-model="book.pick">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Destination</span>
+                    <input type="text" placeholder="Destination" ng-model="book.destination">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Start Date</span>
+                    <input type="date" placeholder="State Date" ng-model="book.startdate">
+                </label>   
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">End Date</span>
+                    <input type="date" placeholder="End Date" ng-model="book.enddate">
+                </label>                               
+                <br />
+                <div class="input-label">
+                        Budget
+                    </div>    
+                <label class="item item-radio">
+                                
+                    <input type="radio" name="group" ng-model="book.budget">
+                    <div class="item-content">
+                        Primium
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                </label>
+                <label class="item item-radio">
+                    <input type="radio" name="group" ng-model="book.budget">
+                    <div class="item-content">
+                        Medium 
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                </label>
+                <label class="item item-radio">
+                    <input type="radio" name="group" ng-model="book.budget">
+                    <div class="item-content">
+                        Low/Make It Cheap
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                </label>
+                
+
+                <button class="button button-block button-calm ink" data-ink-color="#9DEAFF" data-ink-opacity="1" ng-click="doBooking()">
+                    Show itinerary
+                </button>
+            </div>       
+            </ion-content>
+</ion-view>

@@ -1,0 +1,36 @@
+<ion-view view-title="Login" hide-nav-bar="true" >
+
+   
+   <ion-content style="background: url(img/mountains.jpg) center; background-size: cover;">
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1>TravelPark</h1>
+            </div>
+        </div>
+         
+   <div class="list">
+        <label class="item item-input">
+          <span class="input-label" style="color:#FFFFFF;">Username</span>
+          <input style="color:#FFFFFF;" type="email" ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label" style="color:#FFFFFF;">Password</span>
+          <input type="password" style="color:#FFFFFF;" ng-model="loginData.password" >
+        </label>
+        </div>
+        <div class="padding">
+            <button ng-click="doLogin()" class="button button-full button-positive ink">Login</button>
+        </div>
+        <div class="padding" style="text-align: center; ">
+        <p style="color:#FFFFFF;">Don't have an account <a href='#/signup' style="color:#FFFFFF;">Signup</a> Here</p>
+        <p style="color:#FFFFFF;">Forgot Password?  <a href='#/forgot' style="color:#FFFFFF;">reset</a> Here</p>
+        </div>  
+             
+        <div class="button-bar social-login">
+            <button class="button button-small button-border icon-left ion-social-google button-assertive-900">Google+</button>
+            <button class="button button-small button-border icon-left ion-social-twitter button-calm-900">Twitter</button>
+            <button class="button button-small button-border icon-left ion-social-facebook button-positive-900">Facebook</button>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,48 @@
+<ion-view view-title="{{data.name}}" align-title="center">
+
+
+   
+   <ion-content>
+        
+    
+    <div class="list card">
+
+  <div class="item item-avatar">
+    <img ng-src="{{data.img}}">
+    <h2>{{data.name}}</h2>
+    
+  </div>
+
+  <div class="item item-body">
+    
+    <p>
+      Your Pick Up point : {{data.pickup}}
+    </p>
+    <p>
+      Your Destination : {{data.destination}}
+    </p>
+    <p>
+      Journey Start date : {{data.startdate}}
+    </p>
+    <p>
+      Journey End date : {{data.enddate}}
+    </p>
+    <p>
+      Budget Details : {{data.budget}}
+    </p>
+    <p>
+      Vechicle : {{data.vechicle}}
+    </p>
+    <p>
+      Travel Time : {{data.time}}
+    </p>
+    <p>
+      Price : {{data.price}}
+    </p>
+    
+  </div>
+  <button class="button button-block button-calm ink" data-ink-color="#9DEAFF" data-ink-opacity="1" ng-click="book()">Book this itinerary</button>
+</div>
+        
+    </ion-content>
+</ion-view>

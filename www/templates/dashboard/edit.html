@@ -1,0 +1,30 @@
+<ion-view view-title="Edit Profile" align-title="center" hide-back-button="true">
+<ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+   <ion-content>
+ <div class="list">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Name</span>
+                    <input type="text" placeholder="Pick Up Point" ng-model="signupData.name">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">EMail ID</span>
+                    <input type="email" placeholder="Destination" ng-model="signupData.username">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Phone Number</span>
+                    <input type="tel" placeholder="State Date" ng-model="signupData.phone">
+                </label>   
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Age</span>
+                    <input type="number" placeholder="End Date" ng-model="signupData.age">
+                </label> 
+                <button class="button button-block button-calm ink" data-ink-color="#9DEAFF" data-ink-opacity="1" ng-click="save()">
+                    Save Editing
+                </button>
+    </div>
+        
+    </ion-content>
+</ion-view>
